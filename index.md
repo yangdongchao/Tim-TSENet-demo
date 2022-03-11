@@ -5,7 +5,7 @@
 This is a [demo](http://dongchaoyang.top/Tim-TSENet-demo/) for our paper **_Improving Target Sound Extraction with Timestamp Information_**. In the following, we will show some examples extracted by our methods.  
 
 <div align=center>
-  <img src="fig/framework.PNG" width="740" height="200" />
+  <img src="fig/framework.PNG" width="500" height="200" />
 </div>
 <center>
   <div style="color:orange; border-bottom: 1px solid #d9d9d9; display: inline-block; color: #999; padding: 2px;">Block Diagram of the Proposed Tim-TSENet</div>
@@ -37,7 +37,7 @@ This is a [demo](http://dongchaoyang.top/Tim-TSENet-demo/) for our paper **_Impr
     <audio src="exp1/val_1004_tsd.wav" controls="controls">ERROR</audio>
 
 <div align=center>
-  <img src="fig/exp2.PNG" width="740" height="200" />
+  <img src="fig/exp2.PNG" width="440" height="220" />
 </div>
 ---
 
@@ -51,7 +51,7 @@ This is a [demo](http://dongchaoyang.top/Tim-TSENet-demo/) for our paper **_Impr
     * **Ours: Tim-TSENet**
     <audio src="exp3/val_1005_tsd.wav" controls="controls">ERROR</audio>
 <div align=center>
-  <img src="fig/exp3.PNG" width="740" height="200" />
+  <img src="fig/exp3.PNG" width="440" height="220" />
 </div>
 ---
 
@@ -65,7 +65,7 @@ This is a [demo](http://dongchaoyang.top/Tim-TSENet-demo/) for our paper **_Impr
     * **Ours: Tim-TSENet**
     <audio src="exp4/val_1007_tsd.wav" controls="controls">ERROR</audio>
 <div align=center>
-  <img src="fig/exp4.PNG" width="740" height="200" />
+  <img src="fig/exp4.PNG" width="440" height="220" />
 </div>
 
 
@@ -81,7 +81,7 @@ We also find some samples still includes other sound events, especially when the
     * **Ours: Tim-TSENet**
     <audio src="exp5_l/val_1009_tsd.wav" controls="controls">ERROR</audio>
 <div align=center>
-  <img src="fig/limits.PNG" width="740" height="200" />
+  <img src="fig/limits.PNG" width="440" height="220" />
 </div>
 
 ### Links
