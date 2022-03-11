@@ -5,7 +5,7 @@
 This is a [demo](http://dongchaoyang.top/Tim-TSENet-demo/) for our paper **_Improving Target Sound Extraction with Timestamp Information_**. In the following, we will show some examples extracted by our methods.  
 
 <div align=center>
-  <img src="fig/framework.PNG" width="500" height="200" />
+  <img src="fig/framework.PNG" width="520" height="250" />
 </div>
 <center>
   <div style="color:orange; border-bottom: 1px solid #d9d9d9; display: inline-block; color: #999; padding: 2px;">Block Diagram of the Proposed Tim-TSENet</div>
@@ -70,7 +70,7 @@ This is a [demo](http://dongchaoyang.top/Tim-TSENet-demo/) for our paper **_Impr
 
 
 ### Limitations
-We also find some samples still includes other sound events, especially when the interfere with the sound is similar with the target sound. It will be part of our future work.
+We also find some samples still includes other sound events, especially when the interfere is similar with the target sound. It will be part of our future work.
 * **Sample 1**
     * **Mixture**
     <audio src="exp5_l/val_1009.wav" controls="controls">ERROR</audio>
@@ -86,7 +86,7 @@ We also find some samples still includes other sound events, especially when the
 
 ### Links
 
-[Paper] [Bibtex] [[ADSPLab@PKU](https://web.pkusz.edu.cn/adsp/)] [TencentAILab]
+[Paper] [Bibtex] [[ADSPLab@PKU](https://web.pkusz.edu.cn/adsp/)] [[TencentAILab](https://ai.tencent.com/ailab/zh/index) [[code](https://github.com/yangdongchao/Tim-TSENet)
 
 ### References
 
