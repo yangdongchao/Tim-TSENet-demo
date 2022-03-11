@@ -1,140 +1,95 @@
-## Speaker-Aware Mixture of Mixtures Training for Weakly Supervised Speaker Extraction
+## Improving Target Sound Extraction with Timestamp Information
 
 ### Introduction
 
-This is a [demo](https://zhazhafon.github.io/demo-samom/) for our paper **_Speaker-Aware Mixture of Mixtures Training for Weakly Supervised Speaker Extraction_**. In the following, we will show the performance of both supervised training and the proposed weakly supervised training(SAMoM for short) for comparison.  
+This is a [demo](http://dongchaoyang.top/Tim-TSENet-demo/) for our paper **_Improving Target Sound Extraction with Timestamp Information_**. In the following, we will show some examples extracted by our methods.  
 
 <div align=center>
-  <img src="fig/20220123_SAMoM2.png" width="740" height="200" />
+  <img src="fig/framework.PNG" width="740" height="200" />
 </div>
 <center>
-  <div style="color:orange; border-bottom: 1px solid #d9d9d9; display: inline-block; color: #999; padding: 2px;">Block Diagram of the Proposed SAMoM Training (SAMoM for short)</div>
+  <div style="color:orange; border-bottom: 1px solid #d9d9d9; display: inline-block; color: #999; padding: 2px;">Block Diagram of the Proposed Tim-TSENet</div>
 </center>	
 
-### Demo 1: Performance on Libri2Mix<sup>[2]</sup>
-
-* **Sample 1: ( Female + Male ) => Female**
+### Demo 1: The comparison between baseline and Tim-TSENet
+* **Sample 1**
     * **Mixture**
-    <audio src="demo1_mix/2830-3979-0011_1580-141084-0010.wav" controls="controls">ERROR</audio>
-    * **Baseline: Supervised Training**
-    <audio src="demo1_sup/2830-3979-0011_1580-141084-0010_s1.wav" controls="controls">ERROR</audio>
-    * **Ours: Weakly Supervised Training with SAMoM**
-    <audio src="demo1_samom/2830-3979-0011_1580-141084-0010_s1.wav" controls="controls">ERROR</audio>
-
+    <audio src="exp1/val_1001.wav" controls="controls">ERROR</audio>
+    * **Target sound**
+    <audio src="exp1/val_1001_lab.wav" controls="controls">ERROR</audio>
+    * **Baseline**
+    <audio src="exp1/val_1001_base.wav" controls="controls">ERROR</audio>
+    * **Ours: Tim-TSENet**
+    <audio src="exp1/val_1001_tsd.wav" controls="controls">ERROR</audio>
+<div align=center>
+  <img src="fig/exp1.PNG" width="740" height="200" />
+</div>
 ---
 
-* **Sample 2: ( Female + Male ) => Male**
+* **Sample 2:**
     * **Mixture**
-     <audio src="demo1_mix/1320-122617-0035_121-121726-0009.wav" controls="controls">ERROR</audio>
-    * **Baseline: Supervised Training**
-    <audio src="demo1_sup/1320-122617-0035_121-121726-0009_s0.wav" controls="controls">ERROR</audio>
-    * **Ours: Weakly Supervised Training with SAMoM**
-    <audio src="demo1_samom/1320-122617-0035_121-121726-0009_s0.wav" controls="controls">ERROR</audio>
+    <audio src="exp2/val_1004.wav" controls="controls">ERROR</audio>
+    * **Target sound**
+    <audio src="exp1/val_1004_lab.wav" controls="controls">ERROR</audio>
+    * **Baseline**
+    <audio src="exp1/val_1004_base.wav" controls="controls">ERROR</audio>
+    * **Ours: Tim-TSENet**
+    <audio src="exp1/val_1004_tsd.wav" controls="controls">ERROR</audio>
 
+<div align=center>
+  <img src="fig/exp2.PNG" width="740" height="200" />
+</div>
 ---
 
-* **Sample 3: ( Male + Male ) => Male**
-    * **Mixture**
-     <audio src="demo1_mix/6930-75918-0007_1089-134691-0022.wav" controls="controls">ERROR</audio>
-    * **Baseline: Supervised Training**
-    <audio src="demo1_sup/6930-75918-0007_1089-134691-0022_s1.wav" controls="controls">ERROR</audio>
-    * **Ours: Weakly Supervised Training with SAMoM**
-    <audio src="demo1_samom/6930-75918-0007_1089-134691-0022_s1.wav" controls="controls">ERROR</audio>
-
+* **Sample 3**
+   * **Mixture**
+    <audio src="exp3/val_1005.wav" controls="controls">ERROR</audio>
+    * **Target sound**
+    <audio src="exp3/val_1005_lab.wav" controls="controls">ERROR</audio>
+    * **Baseline**
+    <audio src="exp3/val_1005_base.wav" controls="controls">ERROR</audio>
+    * **Ours: Tim-TSENet**
+    <audio src="exp3/val_1005_tsd.wav" controls="controls">ERROR</audio>
+<div align=center>
+  <img src="fig/exp3.PNG" width="740" height="200" />
+</div>
 ---
 
-* **Sample 4: ( Female + Female ) => Female**
+* **Sample 4:**
     * **Mixture**
-     <audio src="demo1_mix/1580-141083-0008_4507-16021-0029.wav" controls="controls">ERROR</audio>
-    * **Baseline: Supervised Training**
-    <audio src="demo1_sup/1580-141083-0008_4507-16021-0029_s1.wav" controls="controls">ERROR</audio>
-    * **Ours: Weakly Supervised Training with SAMoM**
-    <audio src="demo1_samom/1580-141083-0008_4507-16021-0029_s1.wav" controls="controls">ERROR</audio>
+    <audio src="exp4/val_1007.wav" controls="controls">ERROR</audio>
+    * **Target sound**
+    <audio src="exp4/val_1007_lab.wav" controls="controls">ERROR</audio>
+    * **Baseline**
+    <audio src="exp4/val_1007_base.wav" controls="controls">ERROR</audio>
+    * **Ours: Tim-TSENet**
+    <audio src="exp4/val_1007_tsd.wav" controls="controls">ERROR</audio>
+<div align=center>
+  <img src="fig/exp4.PNG" width="740" height="200" />
+</div>
 
-### Demo 2: Cross-domain Evaluation
 
-* Comming Soon...
-
-### Demo 3: Noisy Scenario<sup>[2][3]</sup>
-
-* **Sample 1: ( Female + Male + Noise ) => Female**
+### Limitations
+We also find some samples still includes other sound events, especially when the interfere with the sound is similar with the target sound. It will be part of our future work.
+* **Sample 1**
     * **Mixture**
-    <audio src="demo3_mix/237-134500-0008_8455-210777-0040.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
-    * **Baseline: Fully Supervised Training**
-    <audio src="demo3_sup/237-134500-0008_8455-210777-0040_s0.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
-    * **Ours: Weakly Supervised Training with SAMoM**
-    <audio src="demo3_samom/237-134500-0008_8455-210777-0040_s0.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
----
-
-* **Sample 2: ( Female + Male + Noise ) => Male**
-    * **Mixture**
-    <audio src="demo3_mix/7127-75947-0019_1089-134691-0018.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
-    * **Baseline: Fully Supervised Training**
-    <audio src="demo3_sup/7127-75947-0019_1089-134691-0018_s0.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
-    * **Ours: Weakly Supervised Training with SAMoM** 
-    <audio src="demo3_samom/7127-75947-0019_1089-134691-0018_s0.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
----
-
-* **Sample 3: ( Male + Male + Noise ) => Male**
-    * **Mixture**
-    <audio src="demo3_mix/7021-79740-0012_8455-210777-0020.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
-    * **Baseline: Fully Supervised Training**
-    <audio src="demo3_sup/7021-79740-0012_8455-210777-0020_s0.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
-    * **Ours: Weakly Supervised Training with SAMoM** 
-    <audio src="demo3_samom/7021-79740-0012_8455-210777-0020_s0.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
----
-
-* **Sample 4: ( Female + Female + Noise ) => Female**
-    * **Mixture**
-    <audio src="demo3_mix/2830-3979-0011_1580-141084-0010.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
-    * **Baseline: Fully Supervised Training**
-    <audio src="demo3_sup/2830-3979-0011_1580-141084-0010_s1.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
-    * **Ours: Weakly Supervised Training with SAMoM**
-    <audio src="demo3_samom/2830-3979-0011_1580-141084-0010_s1.wav" controls="controls">
-    ERROR !!! Cannot Play Audio !!!
-    </audio>
-
----
+    <audio src="exp5_l/val_1009.wav" controls="controls">ERROR</audio>
+    * **Target sound**
+    <audio src="exp5_l/val_1009_lab.wav" controls="controls">ERROR</audio>
+    * **Baseline**
+    <audio src="exp5_l/val_1009_base.wav" controls="controls">ERROR</audio>
+    * **Ours: Tim-TSENet**
+    <audio src="exp5_l/val_1009_tsd.wav" controls="controls">ERROR</audio>
+<div align=center>
+  <img src="fig/limits.PNG" width="740" height="200" />
+</div>
 
 ### Links
 
-[Paper] [Bibtex] [[ADSPLab@PKU](https://web.pkusz.edu.cn/adsp/)]
+[Paper] [Bibtex] [[ADSPLab@PKU](https://web.pkusz.edu.cn/adsp/)] [TencentAILab]
 
 ### References
 
-[1] M. Delcroix, T. Ochiai, K. Zmolikova, K. Kinoshita, N. Tawara, T. Nakatani, and S. Araki, “Improving speaker discrimination of target speech extraction with time-domain speakerbeam,” in ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2020, pp. 691695.  
-[2] J. Cosentino, M. Pariente, S. Cornell, A. Deleforge, and E. Vincent, “Librimix: An open-source dataset for generalizable speech separation,” arXiv preprint arXiv:2005.11262, 2020.  
-[3] G. Wichern, J. Antognini, M. Flynn, L. R. Zhu, E. McQuinn, D. Crow, E. Manilow, and J. Le Roux, “WHAM!: extending speech separation to noisy environments,” in Interspeech, 2019, pp. 1368–1372.x
+[1] Delcroix M, Vázquez J B, Ochiai T, et al. Few-shot learning of new sound classes for target sound extraction[J]. arXiv preprint arXiv:2106.07144, 2021.
+[2] Ochiai T, Delcroix M, Koizumi Y, et al. Listen to what you want: Neural network-based universal sound selector[J]. arXiv preprint arXiv:2006.05712, 2020.
+[3] Luo Y, Mesgarani N. Conv-tasnet: Surpassing ideal time–frequency magnitude masking for speech separation[J]. IEEE/ACM transactions on audio, speech, and language processing, 2019, 27(8): 1256-1266.
