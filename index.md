@@ -22,7 +22,7 @@ This is a [demo](http://dongchaoyang.top/Tim-TSENet-demo/) for our paper **_Impr
     * **Ours: Tim-TSENet**
     <audio src="exp1/val_1001_tsd.wav" controls="controls">ERROR</audio>
 <div align=center>
-  <img src="fig/exp1.PNG" width="740" height="200" />
+  <img src="fig/exp1.PNG" width="400" height="200" />
 </div>
 ---
 
