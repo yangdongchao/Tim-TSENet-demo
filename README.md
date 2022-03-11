@@ -1,5 +1,5 @@
 
-## Speaker-aware Mixture of Mixtures Training for Weakly Supervised Speaker Extraction
+## Improving Target Sound Extraction with Timestamp Information
 
 ### About
-This is a [demo](https://zhazhafon.github.io/demo-samom/) for our paper '_Speaker-aware Mixture of Mixtures Training for Weakly Supervised Speaker Extraction_'. Check [https://zhazhafon.github.io/demo-samom/](https://zhazhafon.github.io/demo-samom/) for details.
+This is a [demo](http://dongchaoyang.top/Tim-TSENet-demo/) for our paper '_Improving Target Sound Extraction with Timestamp Information_'. Check [http://dongchaoyang.top/Tim-TSENet-demo/](http://dongchaoyang.top/Tim-TSENet-demo/) for details.
