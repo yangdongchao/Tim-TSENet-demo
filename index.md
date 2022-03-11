@@ -90,6 +90,6 @@ We also find some samples still includes other sound events, especially when the
 
 ### References
 
-[1] Delcroix M, Vázquez J B, Ochiai T, et al. Few-shot learning of new sound classes for target sound extraction[J]. arXiv preprint arXiv:2106.07144, 2021.
-[2] Ochiai T, Delcroix M, Koizumi Y, et al. Listen to what you want: Neural network-based universal sound selector[J]. arXiv preprint arXiv:2006.05712, 2020.
-[3] Luo Y, Mesgarani N. Conv-tasnet: Surpassing ideal time–frequency magnitude masking for speech separation[J]. IEEE/ACM transactions on audio, speech, and language processing, 2019, 27(8): 1256-1266.
+[1] Delcroix M, Vázquez J B, Ochiai T, et al. Few-shot learning of new sound classes for target sound extraction[J]. arXiv preprint arXiv:2106.07144, 2021. <br>
+[2] Ochiai T, Delcroix M, Koizumi Y, et al. Listen to what you want: Neural network-based universal sound selector[J]. arXiv preprint arXiv:2006.05712, 2020. <br>
+[3] Luo Y, Mesgarani N. Conv-tasnet: Surpassing ideal time–frequency magnitude masking for speech separation[J]. IEEE/ACM transactions on audio, speech, and language processing, 2019, 27(8): 1256-1266. <br>
